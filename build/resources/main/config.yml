@@ -1,0 +1,37 @@
+#SOCIAL NETWORKS PLUGIN!
+
+#If you don't know what to do, join our discord, where we will give you advice.
+#https://discord.gg/G8NSqmXt3P
+
+#Used to let the plugin determine if your config is up-to-date, so a
+#warning can be printed in the server console. Only edit this if you
+#know what you are doing, or have just updated your config to the
+#newest version.
+config-version: '1.1'
+
+#Commands/Permissions:
+
+#/instagram socialnetworks.instagram
+#/discord socialnetworks.discord
+#/twitter socialnetworks.twitter
+#/tiktok socialnetworks.tiktok
+#/website socialnetworks.website
+#/youtube socialnetworks.youtube
+#/facebook socialnetworks.facebook
+#/store socialnetworks.store
+#/teamspeak socialnetworks.teamspeak
+
+#Messages
+Prefix: "&e[&6SocialNetworks&e]"
+Reload: "&7Reload plugin was successful."
+
+#Social Networks
+Instagram: "instagram.com/yourserver"
+Discord: "discord.gg/yourserver"
+Twitter: "twitter.com/yourserver"
+TikTok: "tiktok.com/@yourserver"
+Website: "yourserver.eu"
+Youtube: "youtube.com/channel/yourserver"
+Facebook: "facebook.com/yourserver"
+Store: "yourstore.eu"
+TeamSpeak: "IP"

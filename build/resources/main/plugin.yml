@@ -1,0 +1,43 @@
+name: SocialNetworks
+version: '1.2'
+main: me.ondraeucz.socialnetworks.SocialNetworks
+api-version: '1.19'
+author: Ondraeucz
+description: Graduating your social networks
+depend:
+  - LuckPerms
+commands:
+  discord:
+    description: /discord
+    aliases:
+      - ds
+  instagram:
+    description: /instagram
+    aliases:
+      - ig
+  youtube:
+    description: /youtube
+    aliases:
+      - yt
+  twitter:
+    description: /twitter
+  website:
+    description: /website
+  facebook:
+    description: /facebook
+    aliases:
+      - fb
+  tiktok:
+    description: /tiktok
+    aliases:
+      - tt
+  store:
+    description: /store
+  teamspeak:
+    description: /teamspeak
+    aliases:
+      - ts
+  socialnetworks:
+    description: /reload
+    aliases:
+      - sn

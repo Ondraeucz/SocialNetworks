@@ -11,8 +11,10 @@ public final class SocialNetworks extends JavaPlugin {
     public void onEnable() {
         System.out.println("Plugin has started!");
         System.out.println("[WARN] There is a new configuration on version 1.1, to update remove the old config");
+
         instance = this;
         this.saveDefaultConfig();
+
         this.getCommand("discord").setExecutor(new discord());
         this.getCommand("facebook").setExecutor(new facebook());
         this.getCommand("instagram").setExecutor(new instagram());
@@ -23,6 +25,15 @@ public final class SocialNetworks extends JavaPlugin {
         this.getCommand("store").setExecutor(new store());
         this.getCommand("teamspeak").setExecutor(new teamspeak());
         this.getCommand("socialnetworks").setExecutor(new reload());
+
+        new UpdateCheck ( this , 113828 ) . getVersion ( version -> {
+            if ( this . getDescription ( ) . getVersion ( ) . equals ( version ) ) {
+                getLogger ( ) . info ( "There is not a new update available." ) ;
+            } else {
+                getLogger ( ) . info ( "There is a new update available." ) ;
+                //Update check plugin
+            }
+        } ) ;
     }
 
     public void onDisable() {

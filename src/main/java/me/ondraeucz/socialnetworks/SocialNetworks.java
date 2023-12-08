@@ -1,5 +1,6 @@
 package me.ondraeucz.socialnetworks;
 
+import me.ondraeucz.socialnetworks.org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class SocialNetworks extends JavaPlugin {
@@ -10,10 +11,21 @@ public final class SocialNetworks extends JavaPlugin {
 
     public void onEnable() {
         System.out.println("Plugin has started!");
-        System.out.println("[WARN] There is a new configuration on version 1.1, to update remove the old config");
+        this.getLogger().warning("There is a new configuration on version 1.1, to update remove the old config");
+        //start plugin and information
+
+        this.getLogger().info("---------------------------------------");
+        this.getLogger().info("SocialNetworks 1.3 version - ENABLE");
+        this.getLogger().info("---------------------------------------");
+        //annoucement console
 
         instance = this;
         this.saveDefaultConfig();
+
+        int pluginId = 20471;
+        Metrics metrics = new Metrics(this, pluginId);
+        metrics.addCustomChart(new Metrics.SimplePie("chart_id", () -> "My value"));
+        //plugin data
 
         this.getCommand("discord").setExecutor(new discord());
         this.getCommand("facebook").setExecutor(new facebook());
@@ -37,7 +49,11 @@ public final class SocialNetworks extends JavaPlugin {
     }
 
     public void onDisable() {
-        System.out.println("Plugin has stopped!");
+
+        this.getLogger().info("---------------------------------------");
+        this.getLogger().info("SocialNetworks 1.3 version - DISABLE");
+        this.getLogger().info("---------------------------------------");
+        //annoucement console {
     }
 
     public static SocialNetworks getInstance() {

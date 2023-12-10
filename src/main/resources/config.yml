@@ -7,7 +7,7 @@
 #warning can be printed in the server console. Only edit this if you
 #know what you are doing, or have just updated your config to the
 #newest version.
-config-version: '1.1'
+config-version: '1.2'
 
 #Commands/Permissions:
 
@@ -19,6 +19,7 @@ config-version: '1.1'
 #/youtube socialnetworks.youtube
 #/facebook socialnetworks.facebook
 #/store socialnetworks.store
+#/hosting socialnetworks.hosting
 #/teamspeak socialnetworks.teamspeak
 
 #Messages
@@ -34,4 +35,5 @@ Website: "yourserver.eu"
 Youtube: "youtube.com/channel/yourserver"
 Facebook: "facebook.com/yourserver"
 Store: "yourstore.eu"
+Hosting: "hosting.eu"
 TeamSpeak: "IP"

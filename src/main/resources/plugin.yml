@@ -1,5 +1,5 @@
 name: SocialNetworks
-version: '1.2'
+version: '1.4'
 main: me.ondraeucz.socialnetworks.SocialNetworks
 api-version: '1.19'
 author: Ondraeucz
@@ -37,6 +37,8 @@ commands:
     description: /teamspeak
     aliases:
       - ts
+  hosting:
+    description: /hosting
   socialnetworks:
     description: /reload
     aliases:
